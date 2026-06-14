@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Environment / secrets
+.env
+*.env
+config/local_settings.py
+
+# Whisper model cache (large binary files, re-downloaded automatically)
+models/
+
+# Logs
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
