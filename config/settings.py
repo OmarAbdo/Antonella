@@ -18,7 +18,7 @@ SILENCE_DURATION = 1.2
 WAKE_WORD = "antonella"
 
 # ── Whisper STT ───────────────────────────────────────────────────────────────
-WHISPER_MODEL = "base"        # tiny (~150MB) | base (~300MB) | small (~500MB)
+WHISPER_MODEL = "small"        # tiny (~150MB) | base (~300MB) | small (~500MB)
 WHISPER_DEVICE = "cpu"
 WHISPER_COMPUTE_TYPE = "int8"
 WHISPER_LANGUAGE = "en"
@@ -30,7 +30,7 @@ WHISPER_BEAM_SIZE = 3
 #   Add-Type -AssemblyName System.Speech
 #   (New-Object System.Speech.Synthesis.SpeechSynthesizer).GetInstalledVoices() | % { $_.VoiceInfo.Name }
 # Common values: "Microsoft Zira Desktop" (female), "Microsoft David Desktop" (male)
-TTS_VOICE = ""
+TTS_VOICE = "Microsoft Zira Desktop"
 TTS_RATE = 1    # -10 (slowest) to 10 (fastest), 0 = default, 1 = slightly faster
 
 # ── Apps (for "open X" command) ────────────────────────────────────────────────

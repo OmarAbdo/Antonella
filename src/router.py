@@ -51,7 +51,7 @@ def route(intent: Intent) -> str:
     if name == "unknown":
         text = p.get("text", "").strip()
         if text:
-            return f"I'm not sure how to '{text}'. {CAPABILITIES}"
-        return CAPABILITIES
+            return f"I'm not sure how to '{text}'."
+        return ''
 
-    return f"I don't know how to do that yet. {CAPABILITIES}"
+    return f"I don't know how to do that yet."
