@@ -14,13 +14,16 @@
 - [ ] **Porcupine wake word** — replace VAD+Whisper trigger with Picovoice Porcupine (free tier, custom wake words, far more reliable in noisy environments)
 
 ## New commands
+- [ ] **Close apps** — *"close Chrome"* / *"close Spotify"* kills the process for any app Antonella can open; tracks what it launched so it knows what to close
+- [ ] **Cancel any scheduled task** — *"cancel"* already works for shutdown; extend to cover sleep and hibernate timers too (currently only `shutdown /a` is wired up)
 - [ ] **Reminders and timers** — *"remind me in 20 minutes to check the oven"* → Windows toast notification
 - [ ] **Media control** — *"pause", "next track", "what's playing"* via Spotify's local HTTP API
 - [ ] **Clipboard integration** — *"read my clipboard"* reads it aloud; *"copy that"* copies Antonella's last response
 - [ ] **Custom user commands** — define *"when I say X, run Y"* entirely in `settings.py`; no Python knowledge needed
 
 ## Product / UX
-- [ ] **System tray icon** — lives in the notification area, shows listening/speaking/idle state, right-click to quit or mute; makes it feel like a real Windows app
+- [ ] **System tray icon** — lives in the notification area (the `^` arrow near the clock), shows listening/speaking/idle state, right-click → Quit; replaces having to hunt for the process in Task Manager when auto-started
+- [ ] **Voice exit** — *"Antonella, shut yourself down"* / *"exit"* / *"quit"* gracefully stops the process
 
 ## Codebase
 - [ ] **Plugin architecture** — drop a `.py` file in `plugins/` and it auto-registers new intents; no changes to core files required
